@@ -1,2 +1,2 @@
 # sunbase
-# To start assignment:- npm start
+# To start assignment:- npm install (if dependencies not added) ==> npm start
