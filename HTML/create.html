@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create</title>
+    <link rel="stylesheet" href="../CSS/style2.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Customer Details</h2>
+      <form id="createForm">
+        <div class="row">
+          <input
+            type="text"
+            id="first"
+            name="first"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            id="last"
+            name="last"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="row">
+          <input type="text" id="street" name="street" placeholder="Street" />
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address"
+          />
+        </div>
+        <div class="row">
+          <input type="text" id="city" name="city" placeholder="City" />
+          <input type="text" id="state" name="state" placeholder="State" />
+        </div>
+        <div class="row">
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <input type="tel" id="phone" name="phone" placeholder="Phone" />
+        </div>
+        <button type="submit" class="blue-button">Submit</button>
+      </form>
+    </div>
+    <script src="../JS/create.js"></script>
+  </body>
+</html>

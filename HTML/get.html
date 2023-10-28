@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list</title>
+    <link rel="stylesheet" href="../CSS/style3.css" />
+    <style></style>
+  </head>
+  <body>
+    <button class="addList" onclick="redirectToCreatePage()">
+      Add new Customer
+    </button>
+    <h1 class="addList">Customer List</h1>
+    <table id="customerTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Street</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="overlay">
+      <span class="close" onclick="closeOverlay()">&times;</span>
+      <h2>Update Customer</h2>
+      <form id="updateForm">
+        <div class="row">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" />
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" />
+        </div>
+        <div class="row">
+          <label for="street">Street:</label>
+          <input type="text" id="street" />
+          <label for="address">Address:</label>
+          <input type="text" id="address" />
+        </div>
+        <div class="row">
+          <label for="city">City:</label>
+          <input type="text" id="city" />
+          <label for="state">State:</label>
+          <input type="text" id="state" />
+        </div>
+        <div class="row">
+          <label for="email">Email:</label>
+          <input type="text" id="email" />
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" />
+        </div>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+    <script src="../JS/get.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        GetList();
+      });
+    </script>
+  </body>
+</html>

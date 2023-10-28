@@ -1,0 +1,17 @@
+{
+  "name": "sunbase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start HTML/login.html && node SERVER/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors-anywhere": "^0.4.4",
+    "express": "^4.18.2",
+    "opn": "^6.0.0"
+  }
+}
